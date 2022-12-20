@@ -1,0 +1,36 @@
+{
+  "name": "my-choir-ui",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "@ionic/vue": "^6.4.1",
+    "@ionic/vue-router": "^6.4.1",
+    "@vue/compat": "^3.2.45",
+    "core-js": "^3.26.1",
+    "vue": "^3.2.13",
+    "vue-router": "^4.0.3",
+    "vuex": "^4.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-vuex": "~5.0.0",
+    "@vue/cli-service": "~5.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "_id": "my-choir-ui@0.1.0",
+  "readme": "ERROR: No README data found!",
+  
+  
+  "jest": {
+    "transformIgnorePatterns": ["/node_modules/(?!@ionic/vue|@ionic/vue-router|@ionic/core|@stencil/core|ionicons)"]
+  }
+}
