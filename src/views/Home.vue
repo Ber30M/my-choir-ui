@@ -2,25 +2,13 @@
   <ion-page>
     <ion-header>
       <ion-toolbar>
-        <ion-title>CHORISTES</ion-title>
+        <ion-title>Home</ion-title>
       </ion-toolbar>
     </ion-header>
-    <ion-content class="ion-padding"
-      ><p>We are going to display chorists components soon!!!</p>
-
-      <choristComponet></choristComponet>
-      <choristComponet></choristComponet>
-      <choristComponet></choristComponet>
-      <choristComponet></choristComponet>
-      <choristComponet></choristComponet>
-      <choristComponet></choristComponet>
-      <choristComponet></choristComponet>
-      <choristComponet></choristComponet>
-      <choristComponet></choristComponet>
-      <choristComponet></choristComponet>
-      <choristComponet></choristComponet>
-      <choristComponet></choristComponet>
-
+    <ion-content class="ion-padding">
+      <lyrics></lyrics>
+      <lyrics></lyrics>
+      <lyrics></lyrics>
 
       <ion-fab vertical="bottom" horizontal="end">
         <ion-fab-button>
@@ -32,10 +20,23 @@
 </template>
 
 <script>
-import choristComponet from '@/components/choristComponet.vue';
+import choristComponet from "@/components/choristComponet.vue";
+import lyrics from "@/components/lyrics.vue";
 export default {
-  components:{
-    choristComponet
-  }
+  data() {
+    return {
+      name: "Bertrand",
+      voice: "Tenor",
+    };
+  },
+  components: {
+    choristComponet,
+    lyrics,
+  },
 };
 </script>
+<style scoped>
+ion-fab{
+  position: fixed;
+}
+</style>
