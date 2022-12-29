@@ -1,10 +1,7 @@
 <template>
   <ion-page>
-    <ion-header>
-      <ion-toolbar>
-        <ion-title>EVENT</ion-title>
-      </ion-toolbar>
-    </ion-header>
+    <my_header></my_header>
+
 
     <ion-content class="ion-padding">
 
@@ -20,6 +17,7 @@
 </template>
 
 <script>
+import my_header from "../components/headercomponent.vue"
 import choristComponet from "@/components/choristComponet.vue";
 import event from "@/components/eventComponent.vue";
 export default {
@@ -32,6 +30,7 @@ export default {
   components: {
     choristComponet,
     event,
+    my_header
   },
 };
 </script>
