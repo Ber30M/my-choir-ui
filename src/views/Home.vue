@@ -2,22 +2,30 @@
   <ion-page>
     <ion-header>
       <ion-toolbar>
-        <ion-title>HOME</ion-title>
+        MYCHOIRAPP<ion-title></ion-title>
       </ion-toolbar>
+      <ion-segment value="default">
+        <ion-segment-button value="Home">
+          <ion-label>Home</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="Event">
+          <ion-label>Event</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="Attendances">
+          <ion-label>Attendances</ion-label>
+        </ion-segment-button>
+      </ion-segment>
     </ion-header>
     <ion-content class="ion-padding">
       <lyrics
-      :my_title="my_title"
-      :my_pub_date="my_pub_date"
-      :my_publisher="my_publisher"
-      :my_txt="my_txt"
+        :my_title="my_title"
+        :my_pub_date="my_pub_date"
+        :my_publisher="my_publisher"
+        :my_txt="my_txt"
       ></lyrics>
 
-
       <ion-fab vertical="bottom" horizontal="end">
-        <ion-fab-button
-        @click="txtChange"
-        >
+        <ion-fab-button @click="txtChange">
           <ion-icon :icon="getIcon('addOutline')"></ion-icon>
         </ion-fab-button>
       </ion-fab>
@@ -69,8 +77,8 @@ Born is the King of Israel!
 Noel Noel Noel Noel
 Born is the King
 Born is the King
-Born is the King of Israel!`,  
-    }
+Born is the King of Israel!`,
+    };
   },
   components: {
     choristComponet,
@@ -84,7 +92,7 @@ Born is the King of Israel!`,
 };
 </script>
 <style scoped>
-ion-fab{
+ion-fab {
   position: fixed;
 }
 </style>
