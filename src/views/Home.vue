@@ -1,21 +1,22 @@
 <template>
   <ion-page>
-    <ion-header>
-      <ion-toolbar>
-        MYCHOIRAPP<ion-title></ion-title>
+    <ion-header style="background-color:lightgreen">
+      <ion-toolbar >
+        <ion-title>MYCHOIRAPP</ion-title>
       </ion-toolbar>
       <ion-segment value="default">
         <ion-segment-button value="Home">
-          <ion-label>Home</ion-label>
+          <router-link to="/" tag="button" active-class="active" exact><a>Home</a></router-link>
         </ion-segment-button>
         <ion-segment-button value="Event">
-          <ion-label>Event</ion-label>
+          <router-link to="/events" tag="button" active-class="active" exact><a>Event</a></router-link>
         </ion-segment-button>
         <ion-segment-button value="Attendances">
-          <ion-label>Attendances</ion-label>
+          <router-link to="/attendances" tag="button" active-class="active" exact><a>Attendances</a></router-link>
         </ion-segment-button>
       </ion-segment>
     </ion-header>
+    
     <ion-content class="ion-padding">
       <lyrics
         :my_title="my_title"
@@ -94,5 +95,9 @@ Born is the King of Israel!`,
 <style scoped>
 ion-fab {
   position: fixed;
+}
+a{
+  color:rgb(4, 29, 12);
+  text-decoration: none;
 }
 </style>
