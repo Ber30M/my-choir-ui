@@ -1,29 +1,15 @@
 <template>
   <ion-page>
-    <ion-header style="background-color:lightgreen">
-      <ion-toolbar >
-        <ion-title>MYCHOIRAPP</ion-title>
-      </ion-toolbar>
-      <ion-segment value="default">
-        <ion-segment-button value="Home">
-          <router-link to="/" tag="button" active-class="active" exact><a>Home</a></router-link>
-        </ion-segment-button>
-        <ion-segment-button value="Event">
-          <router-link to="/events" tag="button" active-class="active" exact><a>Event</a></router-link>
-        </ion-segment-button>
-        <ion-segment-button value="Attendances">
-          <router-link to="/attendances" tag="button" active-class="active" exact><a>Attendances</a></router-link>
-        </ion-segment-button>
-      </ion-segment>
-    </ion-header>
+    <my_header></my_header>
+
+    <ion-searchbar show-clear-button="focus" value="Show on Focus" mode="ios"></ion-searchbar>
     
     <ion-content class="ion-padding">
-      <lyrics
+      <ion-item><lyrics
         :my_title="my_title"
         :my_pub_date="my_pub_date"
         :my_publisher="my_publisher"
-        :my_txt="my_txt"
-      ></lyrics>
+        :my_txt="my_txt"></lyrics></ion-item>
 
       <ion-fab vertical="bottom" horizontal="end">
         <ion-fab-button @click="txtChange">
@@ -35,6 +21,7 @@
 </template>
 
 <script>
+import my_header from "../components/headercomponent.vue"
 import choristComponet from "@/components/choristComponet.vue";
 import lyrics from "@/components/lyrics.vue";
 export default {
@@ -84,11 +71,15 @@ Born is the King of Israel!`,
   components: {
     choristComponet,
     lyrics,
+    my_header
   },
   methods: {
     txtChange() {
       this.my_txt = prompt("andika titre nshasha ngaha");
     },
+    goToEvent() {
+        this.$router.push('/events')
+    }
   },
 };
 </script>
@@ -100,4 +91,5 @@ a{
   color:rgb(4, 29, 12);
   text-decoration: none;
 }
+
 </style>

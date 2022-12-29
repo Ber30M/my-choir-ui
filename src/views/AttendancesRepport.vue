@@ -1,10 +1,9 @@
 <template>
   <ion-page>
-    <ion-header>
-      <ion-toolbar>
-        <ion-title>ATTENDANCES</ion-title>
-      </ion-toolbar>
-    </ion-header>
+    <my_header></my_header>
+    <ion-searchbar show-clear-button="focus" value="Show on Focus" mode="ios"></ion-searchbar>
+
+
     <ion-content class="ion-padding"
       ><p>We are going to display chorists' attendances repport soon!!!</p>
     </ion-content>
@@ -12,5 +11,10 @@
 </template>
 
 <script>
-export default {};
+import my_header from '../components/headercomponent.vue'
+export default {
+  components:{
+    my_header
+  }
+};
 </script>

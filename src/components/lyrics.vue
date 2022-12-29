@@ -29,7 +29,7 @@ export default {
   display: flex;
 }
 ion-card {
-  background-color: rgb(255, 250, 210);
+  background-color: rgb(255, 255, 255);
 }
 ion-button:active {
   scale: 1.2;

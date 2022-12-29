@@ -1,6 +1,7 @@
 <template>
   <ion-page>
     <my_header></my_header>
+    <ion-searchbar show-clear-button="focus" value="Show on Focus" mode="ios"></ion-searchbar>
 
 
     <ion-content class="ion-padding">
