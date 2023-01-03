@@ -1,7 +1,7 @@
 <template>
     <ion-header >
       <ion-toolbar class="no_border" mode="md">
-        <ion-segment value="/home" mode="md" @ionChange="e=>navigate(e)">
+        <ion-segment :value="$route.path" mode="md" @ionChange="e=>navigate(e)">
           <ion-segment-button value="/home">
             Home
           </ion-segment-button>
@@ -25,7 +25,6 @@ export default {
   methods:{
     navigate(e){
       this.$router.push(e.target.value);
-      console.log(e.target.value);
     }
   }
 }
