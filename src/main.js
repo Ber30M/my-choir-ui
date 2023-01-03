@@ -3,7 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import {
-  IonApp, IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonicVue, IonRouterOutlet, IonFab,IonFabButton, IonIcon, IonSearchbar, IonSegment, IonSegmentButton, IonCardTitle, IonCardSubtitle, IonCardHeader, IonCardContent, IonButton, IonCard, IonItem,
+  IonApp, IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonicVue, IonRouterOutlet, IonFab,IonFabButton, IonIcon, IonSearchbar, IonSegment, IonSegmentButton, IonCardTitle, IonCardSubtitle, IonCardHeader, IonCardContent, IonButton, IonCard, IonItem, IonAvatar, IonItemOption, IonItemOptions, IonLabel, IonItemSliding, IonButtons, IonImg, IonList, IonModal
 } from '@ionic/vue';
 import '@ionic/core/css/ionic.bundle.css'
 import { DefineComponent } from 'vue';
@@ -33,6 +33,15 @@ app.component("IonCardContent", IonCardContent)
 app.component("IonCardHeader", IonCardHeader)
 app.component("IonCardSubtitle", IonCardSubtitle)
 app.component("IonCardTitle", IonCardTitle)
+app.component("IonAvatar", IonAvatar)
+app.component("IonItemOption", IonItemOption)
+app.component("IonItemOptions", IonItemOptions)
+app.component("IonLabel", IonLabel)
+app.component("IonItemSliding", IonItemSliding)
+app.component("IonButtons", IonButtons)
+app.component("IonImg", IonImg)
+app.component("IonList", IonList)
+app.component("IonModal", IonModal)
 
 app.mount('#app');
 

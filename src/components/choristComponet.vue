@@ -1,5 +1,5 @@
 <template>
-  <ion-item-sliding>
+  <ion-item-sliding @ionDrag="e=>gupushinga(e)">
     <ion-item-options side="start">
       <ion-item-option color="success">
         <ion-icon></ion-icon>
@@ -12,15 +12,24 @@
         <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
       </ion-avatar>
       <ion-label>
-        Chorist's Name
+        {chorist_name}
       </ion-label>
     </ion-item>
-
-    <ion-item-options>
-      <ion-item-option color="danger">
-        <ion-icon></ion-icon>
-        Absent
-      </ion-item-option>
-    </ion-item-options>
   </ion-item-sliding>
 </template>
+
+<script>
+export default {
+  data() {
+    return{
+
+    }
+  },
+  methods:{
+    gupushinga(e){
+      console.log(e);
+      e.target.gesture.destroy();
+    }
+  }
+}
+</script>
