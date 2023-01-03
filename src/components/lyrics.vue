@@ -1,5 +1,5 @@
 <template>
-  <ion-card>
+  <ion-card @click="changeTheTitle()">
     <ion-card-header>
       <ion-card-title>{{ my_title }}</ion-card-title>
       <ion-card-subtitle>published on {{ my_pub_date }}</ion-card-subtitle>
@@ -23,7 +23,7 @@ export default {
   props: ["my_title", "my_pub_date", "my_publisher", "my_txt"],
   methods:{
     changeTheTitle(){
-      
+      console.log('you clicked on the lyrics component');
     }
   }
 };
