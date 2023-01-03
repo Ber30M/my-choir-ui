@@ -7,6 +7,7 @@ import events from '../views/eventspage.vue'
 
 const routes = [
   { path: '/', name: 'Home', component: Home},
+  { path: '/home', name: 'Home', component: Home},
   { path: '/attendances', name: 'attendances', component: attendances},
   { path: '/events', name: 'events', component: events},
 ]

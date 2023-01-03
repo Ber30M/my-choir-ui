@@ -1,6 +1,5 @@
 <template>
   <ion-page>
-    <my_header></my_header>
     <ion-searchbar show-clear-button="focus" value="Show on Focus" mode="ios"></ion-searchbar>
 
 
@@ -18,7 +17,6 @@
 </template>
 
 <script>
-import my_header from "../components/headercomponent.vue"
 import choristComponet from "@/components/choristComponet.vue";
 import event from "@/components/eventComponent.vue";
 export default {
@@ -30,8 +28,7 @@ export default {
   },
   components: {
     choristComponet,
-    event,
-    my_header
+    event
   },
 };
 </script>

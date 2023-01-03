@@ -1,6 +1,5 @@
 <template>
   <ion-page>
-    <my_header></my_header>
 
     <ion-searchbar show-clear-button="focus" value="Show on Focus" mode="ios"></ion-searchbar>
     
@@ -21,7 +20,6 @@
 </template>
 
 <script>
-import my_header from "../components/headercomponent.vue"
 import choristComponet from "@/components/choristComponet.vue";
 import lyrics from "@/components/lyrics.vue";
 export default {
@@ -71,7 +69,6 @@ Born is the King of Israel!`,
   components: {
     choristComponet,
     lyrics,
-    my_header
   },
   methods: {
     txtChange() {
