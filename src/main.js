@@ -3,7 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import {
-  IonApp, IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonicVue, IonRouterOutlet, IonFab,IonFabButton, IonIcon
+  IonApp, IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonicVue, IonRouterOutlet, IonFab,IonFabButton, IonIcon, IonSearchbar, IonSegment, IonSegmentButton, IonCardTitle, IonCardSubtitle, IonCardHeader, IonCardContent, IonButton, IonCard, IonItem,
 } from '@ionic/vue';
 import '@ionic/core/css/ionic.bundle.css'
 import { DefineComponent } from 'vue';
@@ -23,6 +23,16 @@ app.component("IonContent", IonContent)
 app.component("IonFab", IonFab)
 app.component("IonFabButton", IonFabButton)
 app.component("IonIcon", IonIcon)
+app.component("IonSegment", IonSegment)
+app.component("IonSearchbar", IonSearchbar)
+app.component("IonSegmentButton", IonSegmentButton)
+app.component("IonItem", IonItem)
+app.component("IonCard", IonCard)
+app.component("IonButton", IonButton)
+app.component("IonCardContent", IonCardContent)
+app.component("IonCardHeader", IonCardHeader)
+app.component("IonCardSubtitle", IonCardSubtitle)
+app.component("IonCardTitle", IonCardTitle)
 
 app.mount('#app');
 

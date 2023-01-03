@@ -25,6 +25,7 @@ export default {
       event_title: "Engagement de mariage",
       event_text: "descriptions de l'événément est tout simplement est événément comme les autres",
       event_date: "12 décember 2023",
+      event_publisher: "Bertrand",
       attandances:null,
     };
   },

@@ -21,6 +21,11 @@
 <script>
 export default {
   props: ["my_title", "my_pub_date", "my_publisher", "my_txt"],
+  methods:{
+    changeTheTitle(){
+      
+    }
+  }
 };
 </script>
 
